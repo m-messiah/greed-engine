@@ -14,6 +14,7 @@
             <td><?= $flag["flag"] ?></td>
             <td><?= $flag["weight"] ?></td>
             <td><?= $flag["login"] ?></td>
+            <td><?= $flag["timestamp"] ?></td>
         </tr>
         <? } ?>
         </table>

@@ -11,6 +11,7 @@
     if ($db->connect_errno)
         return view('error', array('message' => 'Can\'t connect to database'));
     $db->query('SET NAMES utf8');
+    $db->query('SET SESSION time_zone = "+5:00"');
     return $db;
   }
 
