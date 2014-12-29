@@ -17,6 +17,6 @@ if (count($data) > 0) {
         $game_data['rate'] = $data['rate'];
     }
 }
-
-return view('rules', array('game' => $game_data))
+$flags = db_query("SELECT flags.id, flags.flag, flags.weight, users.login FROM flags, users WHERE flags.posted=? AND flags.uid=users.id ORDER BY flags.id", 'd', array(1));
+return view('flags', array('game' => $game_data, 'flags' => $flags))
 ?>
