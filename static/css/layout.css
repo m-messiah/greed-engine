@@ -1,0 +1,199 @@
+@font-face {
+    font-family: 'pieces_of_eight_cyrillic_aaRg';
+    src: url('../fonts/piecesofeightcyrillicaav2-webfont.eot');
+    src: url('../fonts/piecesofeightcyrillicaav2-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/piecesofeightcyrillicaav2-webfont.woff2') format('woff2'),
+         url('../fonts/piecesofeightcyrillicaav2-webfont.woff') format('woff'),
+         url('../fonts/piecesofeightcyrillicaav2-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body,html {
+    color: #fff;
+    background-color: #000;
+}
+
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+    font-family: 'pieces_of_eight_cyrillic_aaRg';
+    font-size: 16px;
+}
+
+.pure-img {
+    display: block;
+    margin: auto;
+}
+
+h1 {
+    margin-top: 0 !important;
+    font-size: 3.75rem;
+    line-height: 3rem;
+}
+
+h1 span {
+    display: block;
+    font-size: 2.5rem;
+}
+
+p {
+    margin: 0 !important;
+}
+
+.mainpage {
+    text-align: center;
+    padding-bottom: 6.25rem;
+}
+
+.mainpage_label {
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 0.313rem;
+}
+
+.mainpage_input {
+    display: block;
+    font-size: 1.5rem;
+    width: 16.667rem;
+    margin: 0 auto 1.875rem;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+    border: 1px #fff solid;
+}
+
+.mainpage_button {
+    font-size: 1.5rem;
+    width: 17.063rem;
+    padding: 0 !important;
+    height: 3.125rem;
+    background: #d9682e;
+    background: -moz-linear-gradient(top, #d9682e 0%, #c13228 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d9682e), color-stop(100%,#c13228));
+    background: -webkit-linear-gradient(top, #d9682e 0%,#c13228 100%);
+    background: -o-linear-gradient(top, #d9682e 0%,#c13228 100%);
+    background: -ms-linear-gradient(top, #d9682e 0%,#c13228 100%);
+    background: linear-gradient(to bottom, #d9682e 0%,#c13228 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9682e', endColorstr='#c13228',GradientType=0 );
+    border: 1px #b22d2e solid;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+}
+
+.pure-menu-heading {
+    text-transform: none !important;
+    font-size: 1rem !important;
+    padding: 5px 0.938rem !important;
+}
+
+.pure-menu li a {
+    padding: 5px 0.938rem !important;
+} 
+
+.gold, .pure-menu-selected a{
+    color: #dd772d !important;
+}
+
+.main-content {
+    padding: 1.250rem 0.938rem 1.250rem 1.250rem;
+}
+
+.game-label {
+    display: inline-block;
+    padding-right: 0.375rem;
+    font-size: 1.125rem;
+}
+
+.game-input {
+    display: inline-block;
+    padding: 0 !important;
+    padding-right: 0.625rem;
+    font-size: 1.125rem;
+    height: 1.25rem;
+    width: 6.25rem;
+    border: 1px #fff solid;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+}
+
+.game-button {
+    font-size: 1.125rem;
+    width: 6.25rem;
+    padding: 0 !important;
+    height: 1.5rem;
+    color: #fff;
+    background: #d9682e;
+    background: -moz-linear-gradient(top, #d9682e 0%, #c13228 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d9682e), color-stop(100%,#c13228));
+    background: -webkit-linear-gradient(top, #d9682e 0%,#c13228 100%);
+    background: -o-linear-gradient(top, #d9682e 0%,#c13228 100%);
+    background: -ms-linear-gradient(top, #d9682e 0%,#c13228 100%);
+    background: linear-gradient(to bottom, #d9682e 0%,#c13228 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9682e', endColorstr='#c13228',GradientType=0 );
+    border: 1px #b22d2e solid;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+}
+
+.message {
+    height:40px;
+    font-size:24px !important;
+    color:#dd772d;
+}
+
+.code-submit {
+    margin-bottom: 1.25rem;
+}
+
+.task {
+    margin-bottom: 1.25rem;
+    position: relative;
+}
+
+.task-num {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.25rem;
+}
+
+.task-desc {
+    padding-left: 2.25rem;
+    max-width: 600px;
+    font-family: arial;
+    line-height: 1.5rem;
+}
+
+.text-page{
+    font-size: 1.375rem !important;
+    line-height: 1.5rem;
+}
+
+.text-page li {
+    padding-bottom: 1rem !important;
+}
+
+td, th {
+    padding-right: 2rem;
+    padding-top: 0.938rem;
+    padding-bottom: 0.938rem;
+}
+
+th {
+    border-bottom: 1px #fff solid;
+}
+
+table {
+    text-align: center;
+    margin: auto;
+}
+
+
+
+
+
+
+

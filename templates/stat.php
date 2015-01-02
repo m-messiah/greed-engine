@@ -5,14 +5,21 @@
 
   <body>
     <? include("_menu.php"); ?>
-        <?
-            foreach ($model["stat"] as $user) {
-        ?>
-        <div>
-            <p><?= $user["login"] ?></p>
-            <span><?= $user["rate"] ?></span>
+    <div class="pure-g main-content">
+        <div class="pure-u-1 text-page">
+            <table>
+            <tr><th>Название шлюпки</th><th>Найденное золото</th></tr>
+            <?
+                foreach ($model["stat"] as $user) {
+            ?>
+            <tr>
+                <td><?= $user["name"] ?></td>
+                <td class="gold"><?= $user["rate"] ?></td>
+            </tr>
+            <? } ?>
+            </table>
         </div>
-        <? } ?>
     </div>
 
-<?php include("_footer.php"); ?>
+  </body>
+</html>

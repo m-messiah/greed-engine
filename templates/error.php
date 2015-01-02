@@ -2,6 +2,8 @@
  <title>Ошибка</title>
 </head>
 <body>
-<?= array_key_exists('message', $model) ? $model['message'] : '' ?>
 
-<?php include("_footer.php"); ?>
+<?= array_key_exists('message', $model) ? $model['message'] : '' ?>
+<a href="/logout.php">Выйти</a>
+  </body>
+</html>

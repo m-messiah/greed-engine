@@ -2,17 +2,28 @@
  <title>Пираты клинического моря</title>
 </head>
 <body>
-<h1>Привет, Клиник!</h1>
-<h2>Я вычислил твой айпи: <? echo $_SERVER["REMOTE_ADDR"]; ?></h2>
-<h3>Бойся!</h3>
-
-<?= array_key_exists('message', $model) ? $model['message'] : '' ?>
-<form action="index.php" method="post">
-    <label>логин:</label><br/>
-  <input name="login" type="text" size="15" maxlength="15"><br/>
-    <label>пароль:</label><br/>
-  <input name="password" type="password" size="15" maxlength="15"><br/><br/>
-  <input type="submit" value="войти"><br/><br/>
-</form>
-
-<?php include("_footer.php"); ?>
+<div class="pure-g">
+    <div class="pure-u-1">
+        <img src="/static/img/pirati.jpg" class="pure-img" />
+    </div>
+    <div class="pure-u-1 mainpage">
+        <h1>Пираты Клинического Моря
+            <span>Битва за сокровища</span>
+        </h1>
+        
+         <? if (array_key_exists('message', $model)) { ?>
+        <div class="pure-u-1 message">
+            <?= $model['message'] ?>
+        </div>
+        <? } ?>
+        <form action="index.php" method="post">
+            <label class="mainpage_label">Название шлюпки</label>
+            <input class="mainpage_input" name="login" type="text">
+            <label class="mainpage_label">Волшебное слово</label>
+            <input class="mainpage_input" name="password" type="password">
+            <input class="mainpage_button" type="submit" value="Шлюпки на воду!">
+        </form>
+    </div>
+</div>
+</body>
+</html>

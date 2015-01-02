@@ -5,22 +5,31 @@
 
   <body>
     <? include("_menu.php"); ?>
-
-    <p><?= $model['game']['message'] ?></p>
-    <form action="index.php" method="post">
-        <label>Код</label><input name="flag" type="text" size="15" maxlength="15">
-        <input type="submit" value="Отправить"><br/><br/>
-    </form>
-    <div>
-        Список заданий:
+    <div class="pure-g main-content">
+        <? if (array_key_exists('message', $model['game'])) { ?>
+        <div class="pure-u-1 message">
+            <?= $model['game']['message'] ?>
+        </div>
+        <? } ?>
+        <div class="pure-u-1 code-submit">
+            <form action="index.php" method="post">
+                <label class="game-label">Код</label>
+                <input class="game-input" name="flag" type="text">
+                <input class="game-button" type="submit" value="Отправить">
+            </form>
+        </div>
         <?
             foreach ($model["game"]["tasks"] as $task) {
         ?>
-        <div>
-            <p><span><?= $task["id"] ?>.</span> <?= $task["task"] ?></p>
-            <span>Сложность: <?= $task["weight"] ?></span>
+        <div class="pure-u-1 task">
+            <p class="task-num"><?= $task["id"] ?></p>
+            <p class="task-desc">
+                <?= $task["task"] ?></br>
+                <span class="gold">Стоимость: <?= $task["weight"] ?></span>
+            </p>
         </div>
         <? } ?>
     </div>
 
-<?php include("_footer.php"); ?>
+  </body>
+</html>
